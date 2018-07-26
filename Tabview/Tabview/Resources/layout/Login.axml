@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7">
+    <LinearLayout
+        android:id="@+id/linearone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F7F7F7"
+        android:gravity="center">
+        <ImageView
+            android:src="@drawable/imedi"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/imgChat" />
+        <TextView
+            android:id="@+id/txtChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="iMedi"
+            android:textColor="#49AE2E"
+            android:textSize="30dp" />
+        <TextView
+            android:id="@+id/txtSimple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Always there to care"
+            android:textColor="#49AE2E"
+            android:textSize="15dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearthree"
+        android:orientation="vertical"
+        android:layout_below="@+id/linearone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F7F7F7"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip">
+        <LinearLayout
+            android:id="@+id/Emailid"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E6E7E9">
+            <ImageView
+                android:src="@drawable/house"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/imgUsername" />
+            <EditText
+                android:id="@+id/txtLEmail"
+                android:hint="Email"
+                android:textSize="8pt"
+                android:textColor="#D4D5D7"
+                android:layout_toRightOf="@+id/imgUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/Passwordid"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="#E6E7E9">
+            <ImageView
+                android:src="@drawable/home"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/imgPassword" />
+            <EditText
+                android:id="@+id/txtLPassword"
+                android:hint="Password"
+                android:textSize="8pt"
+                android:layout_toRightOf="@+id/imgPassword"
+                android:textColor="#D4D5D7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnLogin"
+        android:background="#04B566"
+        android:hint="Login"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:textColorHint="#76D4A5"
+        android:textColor="#76D4A5"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearthree"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip" />
+    <Button
+        android:id="@+id/btnLRegister"
+        android:background="#04B566"
+        android:hint="Register"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:textColorHint="#76D4A5"
+        android:textColor="#76D4A5"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLogin"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip" />
+</RelativeLayout>
